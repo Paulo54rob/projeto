@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de gastos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Controle de gastos</h1>
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <h2>Adicionar gasto</h2>
+        <div>
+          <label for="valor">Valor:</label>
+          <input type="number" id="valor" />
+        </div>
+        <div>
+          <label for="data">Data:</label>
+          <input type="date" id="data" />
+        </div>
+        <div>
+        <label for="metodo-pagamento">Forma de pagamento:</label>
+        <select id="metodo-pagamento" name="metodo-pagamento">
+        <option value="credito">Crédito</option>
+        <option value="debito">Débito</option>
+        <option value="pix">Pix</option>
+        </select>
+        </div>
+        <div>
+        <label for="tipo">Tipo de gasto:</label>
+        <select id="tipo" name="tipo">
+        <option value="alimentacao">Alimentação</option>
+        <option value="academia">Academia</option>
+        <option value="lazer">Lazer</option>
+        <option value="compras">Compras</option>
+        <option value="mercado">Mercado</option>
+        <option value="transporte">Transporte</option>
+        <option value="outros">Outros</option>
+        </select>
+        </div>
+        <div class="button">
+            <button type="submit">Enviar</button>
+          </div>
+          <div class="reset">
+            <button type="reset">Limpar dados</button>
+          </div>
+
+      </form>
+      
+</body>
+</html>
